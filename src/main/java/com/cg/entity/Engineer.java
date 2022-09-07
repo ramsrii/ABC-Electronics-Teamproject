@@ -18,7 +18,7 @@ public class Engineer {
 	
 	@NotNull(message = "password cannot be null")
 	@Size(min=2,max=10, message = "Password must be greater than or equal to 5 characters and less than 10 characters")
-	@JsonIgnore
+	
 	private String password;
 	
 	@NotNull(message = "engineer name cannot be null")
@@ -33,11 +33,11 @@ public class Engineer {
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
-	@JsonIgnore
+	
 	public String getPassword() {
 		return password;
 	}
-	@JsonProperty
+	
 	public void setPassword(String password) {
 		this.password = password;
 	}

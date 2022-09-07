@@ -18,7 +18,6 @@ import com.cg.service.LoginService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-//@RequestMapping("auth")
 public class LoginController {
 	
 	@Autowired

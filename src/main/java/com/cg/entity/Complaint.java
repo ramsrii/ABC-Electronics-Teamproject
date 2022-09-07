@@ -70,24 +70,5 @@ public class Complaint {
 		this.engineer = engineer;
 	}
 	
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + complaintId;
-		return result;
-	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Complaint other = (Complaint) obj;
-		if (complaintId != other.complaintId)
-			return false;
-		return true;
-	}
+
 }

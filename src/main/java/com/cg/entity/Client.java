@@ -23,7 +23,7 @@ public class Client {
 	
 	@NotNull(message = "password cannot be null")
 	@Size(min=4,max=10, message = "Password must be greater than or equal to 5 characters and less than 10 characters")
-	@JsonIgnore
+
 	private String password;
 	
 	@NotNull(message = "address cannot be null")
@@ -38,11 +38,11 @@ public class Client {
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
-	@JsonIgnore
+
 	public String getPassword() {
 		return password;
 	}
-	@JsonProperty
+	
 	public void setPassword(String password) {
 		this.password = password;
 	}
