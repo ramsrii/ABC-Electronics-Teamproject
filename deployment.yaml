@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment # Kubernetes resource kind we are creating
+metadata:
+  name: abc-electronics
+spec:
+  selector:
+    matchLabels:
+      app: abc-electronics
+  replicas: 3 # Number of replicas that will be created for this deployment
+  template:
+    metadata:
+      labels:
+        app: abc-electronics
+    spec:
+      containers:
+        - name: abc-electronics
+          image: abc-electronics-project:1.0 # Image that will be used to containers in the cluster
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8082 # The port that the container is running on in the cluster

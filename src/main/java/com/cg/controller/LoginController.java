@@ -23,7 +23,7 @@ public class LoginController {
 	@Autowired
 	public LoginService ls;
 	
-	@GetMapping("api")
+	@GetMapping("/api")
 	public String fronttoback() {
 		return "Spring Boot App";
 	}
